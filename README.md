@@ -1,1 +1,1 @@
-# Collection of Vanilla JS Functions I've that can be use in practical application for any website.
+<h2 align="center"; > Collection of Vanilla JS Functions I have made <br> that can be used in practical applications for any website.</h3>
