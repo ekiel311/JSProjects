@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+        <title>My Mini JS Projects</title>
+    </head>
+    <body>
+        <div class="d-flex flex-row">
+            <div class="flex-column bg-light menu py-4 px-3 sidemenu">
+                <div>
+                    <a href="./" class="h4 fw-bold text-decoration-none">My Mini <span class="text-warning">{JS}</span> Projects</a>
+                </div>
+                <div class="border-bottom my-2 border-2"></div>
+                <div class="my-2 ps-3">
+                    <a class="menulink fw-medium" data-bs-toggle="collapse" data-bs-target="#list">
+                        <i class="fs-3 bi bi-calculator icon"></i>Calculators<i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="collapse" id="list">
+                        <li class="mb-2">
+                            <a class="text-decoration-none menulink"><i class="bi bi-calculator icon"> </i>Standard Calculator</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-decoration-none menulink" onclick="document.getElementById('frame1').src = './frames/bmi_calc.html'"
+                                ><i class="bi bi-speedometer2"></i>BMI Calculator</a
+                            >
+                        </li>
+                        <li class="">
+                            <a class="text-decoration-none menulink"><i class="bi bi-heart-pulse"></i>Love Calculator</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="my-2 ps-3">
+                    <a class="menulink fw-medium"><i class="fs-3 bi bi-calculator icon"></i>Project 2 </a>
+                </div>
+                <div class="my-2 ps-3">
+                    <a class="menulink fw-medium"><i class="fs-3 bi bi-calculator icon"></i>Project 3</a>
+                </div>
+                <div class="my-2 ps-3">
+                    <a class="menulink fw-medium"><i class="fs-3 bi bi-calculator icon"></i>Calculators <i class="bi bi-chevron-down"></i></a>
+                </div>
+
+                <div class="position-absolute bottom-0">
+                    <button class="btn fw-bold">Footer</button>
+                </div>
+            </div>
+
+            <div class="flex-column bg-light smallmenu py-4 px-1">
+                <div class="text-center">
+                    <a
+                        href="./"
+                        class="h4 fw-bold text-decoration-none"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="right"
+                        title="My Mini JS Projects"
+                        ><span class="text-warning">{JS}</span></a
+                    >
+                </div>
+                <div class="border-bottom my-2 border-2"></div>
+                <div class="my-2 px-2">
+                    <a class="menulink fw-medium text-center gap-0" data-bs-toggle="collapse" data-bs-target="#list2">
+                        <i class="fs-4 bg bi bi-calculator icon mx-0"></i><i class="fs-6 bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="collapse list-group" id="list2">
+                        <li class="mb-2 mx-auto">
+                            <a
+                                class="text-decoration-none menulink text-center"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="right"
+                                title="Standard Calculator"
+                                ><i class="bi bi-calculator icon"> </i
+                            ></a>
+                        </li>
+                        <li class="mb-2 mx-auto">
+                            <a
+                                class="text-decoration-none menulink"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="right"
+                                title="BMI Calculator"
+                                onclick="document.getElementById('frame1').src = './frames/bmi_calc.html'"
+                                ><i class="bi bi-speedometer2"></i
+                            ></a>
+                        </li>
+                        <li class="mx-auto">
+                            <a class="text-decoration-none menulink" data-bs-toggle="tooltip" data-bs-placement="right" title="Love Calculator"
+                                ><i class="bi bi-heart-pulse"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="my-2 px-3">
+                    <a class="menulink fw-medium"><i class="fs-3 bi bi-calculator icon"></i> </a>
+                </div>
+                <div class="my-2 px-3">
+                    <a class="menulink fw-medium"><i class="fs-3 bi bi-calculator icon"></i></a>
+                </div>
+                <div class="my-2 px-3">
+                    <a class="menulink fw-medium"><i class="fs-3 bi bi-calculator icon"></i></a>
+                </div>
+
+                <div class="position-absolute bottom-0">
+                    <button class="btn fw-bold"></button>
+                </div>
+            </div>
+
+            <div class="flex-column bg-primary w-100">
+                <iframe class="col" id="frame1"></iframe>
+            </div>
+        </div>
+        <!-- BS5 Script -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+        <!-- BS5 Tooltip -->
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        </script>
+    </body>
+</html>
