@@ -7,6 +7,19 @@ html {
     box-sizing: border-box;
 }
 
+/* REMOVE ARROW FROM INPUT TYPE NUMBER */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 @media (width < 770px) {
     .menu {
         display: none;
@@ -70,4 +83,13 @@ li {
 .framepage {
     height: 100vh;
     width: 100vw;
+}
+
+.bmi-form {
+    max-width: 30rem;
+}
+
+.bmi-form2 {
+    max-width: 30rem;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.052);
 }
