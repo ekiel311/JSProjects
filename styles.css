@@ -17,7 +17,7 @@ input::-webkit-inner-spin-button {
 
 /* Firefox */
 input[type="number"] {
-    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 @media (width < 770px) {
@@ -95,5 +95,5 @@ li {
 }
 
 .resultsize {
-    height: 100px;
+    height: 120px;
 }

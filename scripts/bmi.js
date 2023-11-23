@@ -39,12 +39,12 @@ function bmiFeedback() {
         document.getElementById("bmiResult").innerHTML =
             'Your BMI is <b class="fs-5 text-warning">' +
             bmiNum +
-            '</b>. You are <b class= "fs-5 text-warning fw-bolder">OVERWEIGHT</b>. <br>That\'s okay, just eat your vegies, and stay away from Jollibee.😉';
+            '</b>. You are <b class= "fs-5 text-warning fw-bolder">OVERWEIGHT</b>. <br>That\'s okay, just eat your veggies, and stay away from Jollibee.😉';
     } else {
         document.getElementById("bmiResult").innerHTML =
             'Your BMI is <b class="fs-5 text-danger">' +
             bmiNum +
-            '</b>. You are already <b class= "fs-5 text-danger fw-bolder">OBESE</b>. <br>Have you heard of <b>Intermittent Fasting</b>? Try it, it helps.😉';
+            '</b>. You are already <b class= "fs-5 text-danger fw-bolder">OBESE</b>. <br>Have you heard of <b>Fasting</b>? Try it, Gutumin mo sarili mo nang ilaw. <br> Pero wag, ang sarap kaya kumain.<br> ༼ つ ◕_◕ ༽つ🍰🍔🍗🥤';
     }
 
     document.getElementById("weight").value = "";
