@@ -95,5 +95,5 @@ li {
 }
 
 .resultsize {
-    height: 120px;
+    min-height: 125px;
 }
