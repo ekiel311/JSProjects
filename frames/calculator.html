@@ -24,36 +24,36 @@
         <title>Standard Calculator</title>
     </head>
     <body style="background-color: #3c4b5a">
-        <h3 class="mt-5 text-center text-white fw-bold">Simple Calculator</h3>
+        <h3 class="mt-5 text-center text-white fw-bolder">Simple Calculator</h3>
         <div class="calc-container">
             <div class="calculator mt-3">
                 <input type="text" id="calc-input" class="form-control mb-3" placeholder="0" readonly />
                 <div class="row g-3">
-                    <div class="col"><button class="btn">7</button></div>
-                    <div class="col"><button class="btn">8</button></div>
-                    <div class="col"><button class="btn">9</button></div>
-                    <div class="col"><button class="btn operator">÷</button></div>
-                </div>
-                <div class="row g-3">
-                    <div class="col"><button class="btn">4</button></div>
-                    <div class="col"><button class="btn">5</button></div>
-                    <div class="col"><button class="btn">6</button></div>
-                    <div class="col"><button class="btn operator">x</button></div>
-                </div>
-                <div class="row g-3">
-                    <div class="col"><button class="btn">1</button></div>
-                    <div class="col"><button class="btn">2</button></div>
-                    <div class="col"><button class="btn">3</button></div>
-                    <div class="col"><button class="btn operator">-</button></div>
-                </div>
-                <div class="row g-3">
-                    <div class="col"><button class="btn">0</button></div>
-                    <div class="col"><button class="btn">.</button></div>
-                    <div class="col"><button class="btn btn--equals">=</button></div>
-                    <div class="col"><button class="btn operator">+</button></div>
-                </div>
-                <div class="row mt-1">
                     <div class="col"><button class="btn cbutton" onclick="clearInput()">C</button></div>
+                    <div class="col-3"><button class="btn operator" onclick="dividedBy()">÷</button></div>
+                </div>
+                <div class="row g-3">
+                    <div class="col"><button class="btn" onclick="calcBtn('7')">7</button></div>
+                    <div class="col"><button class="btn" onclick="calcBtn('8')">8</button></div>
+                    <div class="col"><button class="btn" onclick="calcBtn('9')">9</button></div>
+                    <div class="col"><button class="btn operator" onclick="times()">x</button></div>
+                </div>
+                <div class="row g-3">
+                    <div class="col"><button class="btn" onclick="calcBtn('4')">4</button></div>
+                    <div class="col"><button class="btn" onclick="calcBtn('5')">5</button></div>
+                    <div class="col"><button class="btn" onclick="calcBtn('6')">6</button></div>
+                    <div class="col"><button class="btn operator" onclick="minus()">-</button></div>
+                </div>
+                <div class="row g-3">
+                    <div class="col"><button class="btn" onclick="calcBtn('1')">1</button></div>
+                    <div class="col"><button class="btn" onclick="calcBtn('2')">2</button></div>
+                    <div class="col"><button class="btn" onclick="calcBtn('3')">3</button></div>
+                    <div class="col"><button class="btn operator" onclick="plus()">+</button></div>
+                </div>
+                <div class="row g-3">
+                    <div class="col"><button class="btn" onclick="calcBtn('0')">0</button></div>
+                    <div class="col"><button class="btn" onclick="calcBtn('.')">.</button></div>
+                    <div class="col-6"><button class="btn btn--equals" onclick="equals()">=</button></div>
                 </div>
             </div>
         </div>
